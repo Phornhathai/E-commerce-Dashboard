@@ -16,8 +16,10 @@ function App() {
 
   const Layout = () => {
     return (
+      // main have set css by global.scss
       <div className="main">
         <Navbar />
+        {/* container have set to flex */}
         <div className="container">
           <div className="menuContainer">
           <Menu/>
