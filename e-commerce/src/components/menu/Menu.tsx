@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import "./menu.scss"
 import { menu } from "../../data"
@@ -13,7 +12,7 @@ const Menu = () => {
             {Item.title}
           </span>
           { Item.listItems.map((listItem) => (
-            <Link to="/" className='listItem'>
+            <Link to={listItem.url} className='listItem'>
             <img src={listItem.icon} alt="" />
             <span className="listItemTitle">
               {listItem.title}

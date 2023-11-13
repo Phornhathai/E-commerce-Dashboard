@@ -1,3 +1,6 @@
+@import "../../styles/responsive.scss";
+
+
 .pieChartBox {
     height: 100%;
     display: flex;
@@ -5,6 +8,11 @@
     justify-content: space-between;
 
 
+     h1{
+        @include xxl{
+            font-size: 24px;
+        }
+     }
     .chart {
         display: flex;
         align-items: center;
